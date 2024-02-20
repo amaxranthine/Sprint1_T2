@@ -25,10 +25,33 @@ echo "Resta:" . ($m - $n);
 echo "Multiplicacion(producte): " . ($m * $n);
 echo "El modul: " . ($m % $n);
 //Para todas las variables 
-//el doble
+//el doble de cada una
 echo "Doble de X: " . ($x * 2);
 echo "Doble de Y: " . ($y * 2);
 echo "Doble de M: " . ($m * 2);
 echo "Doble de N: " . ($n * 2);
+//Suma de todas y el producte de totes les variables.
+echo "La suma de todas las variables es: " . ($x + $y + $n + $m) . "\n";
+echo "El producto de todas las variables es: " . ($x * $y * $n * $m) . "\n";
+//Calculadora (esta mal ,fijo)
+function Calculadora ($num1, $num2, $operacion) {
+    switch ($operacion){
+        case 'suma':
+            return $num1 + $num2;
+        case 'resta':
+            return $num1 - $num2;
+        case 'multiplicacion' :
+            return  $num1 * $num2; 
+        case 'division' :
+            if ($num2 != 0) {
+                return $num1 / $num2;
+            } else {
+                return "No se puede dividir por cero";
+            }
+        default:
+            return "Operación no válida";
+              
+    }
 
+}
 ?>
