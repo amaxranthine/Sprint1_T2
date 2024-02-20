@@ -13,8 +13,10 @@ $y = 12;
 $m = 1.24;
 $n = 2.30;
 //paso 2
-echo "$x , $y";
-
-
+echo "Estos son los valores de todas las variables : $x , $y , $m , $n ";
+//variables x - y
+echo "Suma:" . ($x + $y);
+echo "Resta:" . ($x - $y);
+echo "Multiplicacion(producte): " . ($x * $y);
 
 ?>

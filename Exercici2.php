@@ -21,5 +21,5 @@ echo "Mensaje invertido: " .  $mInvert . "<br>";
 //paso 5: Crea una nova variable amb el contingut “Aquest és el curs de PHP”
 $nuevoMensaje = "Aquest es el curs de PHP";
 //imprimeix per pantalla la concatenació de tots dos strings
-echo ". $mensaje" . "$nuevoMensaje .";
+echo  $mensaje . $nuevoMensaje ;
 ?>
