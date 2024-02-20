@@ -18,5 +18,6 @@ echo "Estos son los valores de todas las variables : $x , $y , $m , $n ";
 echo "Suma:" . ($x + $y);
 echo "Resta:" . ($x - $y);
 echo "Multiplicacion(producte): " . ($x * $y);
+echo "El modul: " . ($x % $y);
 
 ?>
