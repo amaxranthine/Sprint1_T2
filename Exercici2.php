@@ -18,5 +18,8 @@ echo "La longitud del mensaje es: $longitud ";
 //paso 4: Imprimeix per pantalla l'string en ordre invers de caràcters.
 $mInvert = strrev($mensaje);
 echo $mInvert;
+//paso 5: Crea una nova variable amb el contingut “Aquest és el curs de PHP”
+$nuevoMensaje = "Aquest es el curs de PHP";
+
 
 ?>
