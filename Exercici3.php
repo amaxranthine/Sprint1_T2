@@ -35,31 +35,33 @@ echo "La suma de todas las variables es: " . ($x + $y + $n + $m) . "\n";
 echo "El producto de todas las variables es: " . ($x * $y * $n * $m) . "\n";
 
 //Calculadora (esta mal ,fijo)
-function Calculadora ($num1, $num2, $operacion) {
+function calculadora ($num1, $num2, $operacion) {
+    $resultado = 0;
     switch ($operacion){
-        case 'suma':
-            return $num1 + $num2;
-        case 'resta':
-            return $num1 - $num2;
-        case 'multiplicacion' :
-            return  $num1 * $num2; 
-        case 'division' :
+        case 'sumar':
+            $resultado = $num1 + $num2;
+            break;
+        case 'restar':
+            $resultado = $num1 - $num2;
+            break;
+        case 'multiplicar' :
+            $resultado = $num1 * $num2; 
+            break;
+        case 'dividir' :
             if ($num2 != 0) {
-                return $num1 / $num2;
+                $resultado = $num1 / $num2;
+                break;
             } else {
-                return "No se puede dividir por cero";
+                $resultado = "No se puede dividir por cero";
             }
-        default:
-            return "Operación no válida";
-              //llamar a la funcion
+            break;
     }
-
+    return $resultado; //devolver el resultado  
 }
-// Ejemplo de uso de la función calculadora
-echo "Suma: " . calculadora(8, 12, 'suma') . "\n";
-echo "Resta: " . calculadora(8, 12, 'resta') . "\n";
-echo "Multiplicación: " . calculadora(8, 12, 'multiplicacion') . "\n";
-echo "División: " . calculadora(8, 12, 'division') . "\n";
-echo "Intento de división por cero: " . calculadora(8, 0, 'division') . "\n";
+
+  // Llamar a la función Calculadora
+$r = calculadora(8,12, "sumar");
+echo " el resultado de la operacion es: " . $r .  "<br>";
+
 
 ?>
