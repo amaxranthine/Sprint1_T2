@@ -26,13 +26,14 @@ echo "Multiplicacion(producte): " . ($m * $n);
 echo "El modul: " . ($m % $n);
 //Para todas las variables 
 //el doble de cada una
-echo "Doble de X: " . ($x * 2);
-echo "Doble de Y: " . ($y * 2);
-echo "Doble de M: " . ($m * 2);
-echo "Doble de N: " . ($n * 2);
+echo "Doble de X: " . ($x * 2) . "\n";
+echo "Doble de Y: " . ($y * 2) . "\n";
+echo "Doble de M: " . ($m * 2) . "\n";
+echo "Doble de N: " . ($n * 2) . "\n";
 //Suma de todas y el producte de totes les variables.
 echo "La suma de todas las variables es: " . ($x + $y + $n + $m) . "\n";
 echo "El producto de todas las variables es: " . ($x * $y * $n * $m) . "\n";
+
 //Calculadora (esta mal ,fijo)
 function Calculadora ($num1, $num2, $operacion) {
     switch ($operacion){
@@ -54,4 +55,11 @@ function Calculadora ($num1, $num2, $operacion) {
     }
 
 }
+// Ejemplo de uso de la función calculadora
+echo "Suma: " . calculadora(8, 12, 'suma') . "\n";
+echo "Resta: " . calculadora(8, 12, 'resta') . "\n";
+echo "Multiplicación: " . calculadora(8, 12, 'multiplicacion') . "\n";
+echo "División: " . calculadora(8, 12, 'division') . "\n";
+echo "Intento de división por cero: " . calculadora(8, 0, 'division') . "\n";
+
 ?>
