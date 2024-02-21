@@ -51,7 +51,7 @@ function Calculadora ($num1, $num2, $operacion) {
             }
         default:
             return "Operación no válida";
-              
+              //llamar a la funcion
     }
 
 }
