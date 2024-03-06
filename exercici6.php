@@ -14,5 +14,5 @@ function isBitten()
 }
  // Llamar a la función y guardar el resultado en una variable
     $r = isBitten();
-    echo $s . "<br>";
+    echo $r . "<br>";
  ?>

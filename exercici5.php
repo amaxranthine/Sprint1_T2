@@ -4,16 +4,18 @@
 function verificarGrado($nota){
     //usar un if?¿
     if($nota >= 60){
-        echo "Primera division";
-    } else if($nota >= 45 && $nota <= 59){
-        echo "Segona divisio";
-    } else if ($nota >= 33 && $nota <= 44) {
-        echo "Tercera Divisió";
-    } else{
-        echo "L'estudiant reprova";
+        $resposta = "El grau assolit correspon a primera divisio";
+    }else if ($nota >= 45){
+        $resposta = "El grau assolit correspon a segona divisio";
+    }else if ($nota >= 33){
+        $resposta = "El grau assolit correspon a tercera divisio";
+    }else if ($nota < 33) {
+        $resposta = "L'estudiant ha de reprovar";
     }
-  
+    return $resposta;
 }
+  
+
 
 // Ejemplo de uso
  $nota = 30; // Cambia esta nota para probar diferentes escenarios
